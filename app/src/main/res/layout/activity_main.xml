@@ -6,51 +6,71 @@
     android:layout_height="match_parent"
     tools:context="com.somsubhra.ipfinder.MainActivity">
 
-    <LinearLayout
-        android:orientation="vertical"
+    <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <EditText
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:layout_marginTop="135dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:hint="@string/enter_URL"
-            android:inputType="textUri"
-            android:id="@+id/urlText"/>
+            android:layout_height="wrap_content">
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
-            android:text="@string/btn_txt"
-            android:textSize="15sp"
-            android:padding="20dp"
-            android:id="@+id/button"
-            android:layout_gravity="center"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginTop="135dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:hint="@string/enter_URL"
+                android:inputType="textUri"
+                android:id="@+id/urlText"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:autoLink="web"
-            android:layout_marginTop="35dp"
-            android:textSize="20sp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:id="@+id/hostText"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:text="@string/btn_txt"
+                android:textSize="15sp"
+                android:padding="20dp"
+                android:id="@+id/button"
+                android:layout_gravity="center"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="35dp"
-            android:textSize="20sp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginRight="50dp"
-            android:id="@+id/ipText"/>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
-    </LinearLayout>
+                <TextView
+                    android:id="@+id/host"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="35dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20sp"
+                    android:textColor="@color/url_color"
+                    android:id="@+id/hostText"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:textSize="20sp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/ipText"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
 
 </android.support.constraint.ConstraintLayout>

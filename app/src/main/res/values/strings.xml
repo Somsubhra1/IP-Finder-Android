@@ -2,6 +2,7 @@
     <string name="app_name">IP Finder</string>
     <string name="enter_URL">Enter URL: </string>
     <string name="btn_txt">Find IP</string>
-    <string name="error_msg">Error Occurred!!</string>
+    <string name="error_msg">Error Occurred!! Please check your URL!</string>
     <string name="url_null">Enter URL first!!</string>
+    <string name="host">Host URL:</string>
 </resources>
