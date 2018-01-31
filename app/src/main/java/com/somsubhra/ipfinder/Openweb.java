@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import android.widget.Toast;
 
 public class Openweb extends AppCompatActivity {
 
@@ -30,5 +29,17 @@ public class Openweb extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
         webView.loadUrl(url);
 
+    }
+
+    //Setting back button functionality:
+
+    @Override
+    public void onBackPressed() {
+        if( webView.canGoBack() ) {
+            webView.goBack();
+        }
+        else {
+            super.onBackPressed();
+        }
     }
 }
